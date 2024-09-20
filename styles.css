@@ -1,0 +1,165 @@
+body {
+    font-family: 'Manrope', 'Noto Sans', sans-serif; /* Define la tipografía principal del sitio */
+    background-color: #fcf8f8; /* Color de fondo de la página */
+    margin: 0; /* Elimina el margen por defecto del body */
+    padding: 0; /* Elimina el padding por defecto del body */
+    display: flex; /* Usa flexbox para organizar el contenido */
+    flex-direction: column; /* Los elementos hijos se apilan en columna */
+    min-height: 100vh; /* Establece una altura mínima de la pantalla completa */
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+}
+
+
+.hero {
+    display: flex; /* Usa flexbox para organizar el contenido */
+    flex-direction: column; /* Los elementos se apilan verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(img/lp.jpeg); /* Establece una imagen de fondo con un gradiente */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el área */
+    background-position: center; /* Centra la imagen de fondo */
+    padding: 16px; /* Espaciado interno de la sección */
+    min-height: 480px; /* Altura mínima de la sección */
+    gap: 24px; /* Espaciado entre los elementos hijos */
+    text-align: center; /* Centra el texto */
+    color: white; /* Color del texto blanco */
+}
+
+.hero h1 {
+    font-size: 2.25rem; /* Tamaño de la fuente del título */
+    font-weight: 900; /* Estilo de texto en negrita extrema */
+    margin: 0; /* Elimina el margen */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra negra suave */
+}
+
+.hero h2 {
+    font-size: 1rem; /* Tamaño de la fuente del subtítulo */
+    font-weight: normal; /* Peso de la fuente normal */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra negra suave */
+}
+
+h3 {
+    color: #1d0c0c; /* Color marrón oscuro */
+    font-size: 1.125rem; /* Tamaño de texto grande (18px) */
+    font-weight: bold; /* Texto en negrita */
+    line-height: 1.25; /* Espaciado ajustado entre líneas */
+    letter-spacing: -0.015em; /* Tracking negativo para reducir el espacio entre letras */
+    padding-left: 1rem; /* Padding horizontal de 16px (1rem) */
+    padding-right: 1rem;
+    padding-top: 1rem; /* Padding superior de 16px (1rem) */
+    padding-bottom: 0.5rem; /* Padding inferior de 8px (0.5rem) */
+}
+
+
+.courses {
+    padding: 16px; /* Espaciado interno de la sección de cursos */
+    display: grid; /* Usa grid para organizar los elementos */
+    grid-template-columns: repeat(auto-fit, minmax(158px, 1fr)); /* Define una distribución de columnas adaptable */
+    gap: 12px; /* Espaciado entre las columnas */
+}
+
+.course {
+    display: flex; /* Usa flexbox para organizar el contenido */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    gap: 12px; /* Espaciado entre los elementos hijos */
+    padding-bottom: 12px; /* Espaciado inferior */
+}
+
+.course-image {
+    width: 100%; /* Ancho completo del contenedor */
+    aspect-ratio: 1 / 1; /* Mantiene una proporción de 1:1 (cuadrado) */
+    background-size: contain; /* Ajusta el tamaño de la imagen para que sea completamente visible */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    border-radius: 16px; /* Bordes redondeados */
+    background-color: #e0e0e0; /* Color de fondo por defecto en caso de que la imagen no cargue */
+}
+
+.course p {
+    color: #1d0c0c; /* Color del texto */
+    font-size: 1rem; /* Tamaño de la fuente del texto */
+    font-weight: medium; /* Peso de la fuente */
+    margin: 0; /* Elimina el margen */
+}
+
+.cta-button {
+    display: flex; /* Usa flexbox para organizar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    background-color: #b62013; /* Color de fondo del botón */
+    color: #fcf8f8; /* Color del texto del botón */
+    font-size: 1rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    padding: 16px; /* Espaciado interno del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando pasa por encima */
+    margin: 16px; /* Margen alrededor del botón */
+}
+
+.testimonial {
+    padding: 16px; /* Espaciado interno del testimonio */
+    margin: 0 16px; /* Margen lateral */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo del testimonio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor del testimonio */
+}
+
+.testimonial p {
+    font-size: 1rem; /* Tamaño de la fuente del texto */
+    margin: 0 0 8px; /* Margen inferior */
+}
+
+.testimonial span {
+    display: block; /* Hace que el span ocupe toda la línea */
+    font-size: 0.875rem; /* Tamaño de la fuente del texto */
+    color: #1d0c0c; /* Color del texto */
+}
+
+
+.sobreNosotros{
+    padding-bottom: 100px;
+}
+
+
+
+
+.footer {
+    display: flex; /* Usa flexbox para organizar el contenido del footer */
+    justify-content: space-around; /* Distribuye los elementos del footer de manera equitativa */
+    align-items: center; /* Centra los elementos verticalmente */
+    background-color: #f1e1d8; /* Color de fondo del footer */
+    color: #1d0c0c;
+    padding: 0.5rem 1rem; /* Ajusta el padding a los lados */
+    position: fixed; /* Posiciona el footer de manera fija en la pantalla */
+    bottom: 0; /* Coloca el footer en la parte inferior */
+    left: 0; /* Alinea el footer al borde izquierdo */
+    z-index: 1000; /* Asegura que el footer esté sobre otros elementos */
+    width: 100%; /* Hace que el footer ocupe todo el ancho */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil que lo hace "flotar" */
+}
+
+.footer a {
+    display: flex; /* Usa flexbox para organizar los enlaces */
+    flex-direction: column; /* Alinea los íconos y el texto verticalmente */
+    align-items: center; /* Centra los íconos y el texto */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #1d0c0c; /* Color del texto de los enlaces */
+    padding-top: 0.7rem;
+}
+
+.footer a.active p {
+    font-weight: bold; /* Hace que el texto del enlace activo sea más grueso */
+    color: #b62013; /* Cambia el color del texto del enlace activo */
+}
+
+.footer svg {
+    width: 24px; /* Ancho de los íconos del footer */
+    height: 24px; /* Altura de los íconos del footer */
+}
+
+.footer p {
+    margin-top: 4px; /* Margen superior del texto en el footer */
+    font-size: 0.875rem; /* Tamaño de la fuente del texto */
+}
