@@ -1,5 +1,5 @@
 body {
-    font-family: 'Manrope', 'Noto Sans', sans-serif; /* Define la tipografía principal del sitio */
+    font-family:  Inter, "Noto Sans", sans-serif; /* Define la tipografía principal del sitio */
     background-color: #fcf8f8; /* Color de fondo de la página */
     margin: 0; /* Elimina el margen por defecto del body */
     padding: 0; /* Elimina el padding por defecto del body */
@@ -95,25 +95,6 @@ h3 {
     border-radius: 8px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor a un puntero cuando pasa por encima */
     margin: 16px; /* Margen alrededor del botón */
-}
-
-.testimonial {
-    padding: 16px; /* Espaciado interno del testimonio */
-    margin: 0 16px; /* Margen lateral */
-    border-radius: 8px; /* Bordes redondeados */
-    background-color: #f9f9f9; /* Color de fondo del testimonio */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor del testimonio */
-}
-
-.testimonial p {
-    font-size: 1rem; /* Tamaño de la fuente del texto */
-    margin: 0 0 8px; /* Margen inferior */
-}
-
-.testimonial span {
-    display: block; /* Hace que el span ocupe toda la línea */
-    font-size: 0.875rem; /* Tamaño de la fuente del texto */
-    color: #1d0c0c; /* Color del texto */
 }
 
 

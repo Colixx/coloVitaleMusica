@@ -1,0 +1,47 @@
+.pantalla{
+    display: flex;
+    text-align: center;
+}
+
+.pantalla h2{
+    margin-bottom: 0px;
+    padding: 2rem 1rem 0rem 1rem;  /* 10px arriba, 20px derecha, 30px abajo, 40px izquierda */
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.pantalla p{
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.botonera{
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Opcional: centra los elementos horizontalmente */
+}
+
+button{
+    min-width: 20rem; /* Ancho mínimo */
+    max-width: 40rem; /* Ancho máximo */
+    margin: 0.2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer; /* Cambia el cursor a mano */
+    align-items: center; /* Centra elementos verticalmente */
+    justify-content: center; /* Centra elementos horizontalmente */
+    overflow: hidden; /* Oculta contenido desbordado */
+    border-radius: 0.75rem; 
+    border-color:  #b62013;
+    font-weight: bold;
+}
+
+.br{
+
+}
+
+.bi{
+    background-color:#b62013;
+    color: white;
+}
+
