@@ -15,7 +15,7 @@ body {
     flex-direction: column; /* Los elementos se apilan verticalmente */
     justify-content: center; /* Centra el contenido verticalmente */
     align-items: center; /* Centra el contenido horizontalmente */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(img/lp.jpeg); /* Establece una imagen de fondo con un gradiente */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(img/f3.png); /* Establece una imagen de fondo con un gradiente */
     background-size: cover; /* Asegura que la imagen de fondo cubra todo el área */
     background-position: center; /* Centra la imagen de fondo */
     padding: 16px; /* Espaciado interno de la sección */
@@ -63,6 +63,7 @@ h3 {
     flex-direction: column; /* Apila los elementos verticalmente */
     gap: 12px; /* Espaciado entre los elementos hijos */
     padding-bottom: 12px; /* Espaciado inferior */
+    cursor: pointer;
 }
 
 .course-image {
@@ -86,7 +87,7 @@ h3 {
     display: flex; /* Usa flexbox para organizar el contenido */
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra el contenido verticalmente */
-    background-color: #b62013; /* Color de fondo del botón */
+    background-color: #b95e33; /* Color de fondo del botón */
     color: #fcf8f8; /* Color del texto del botón */
     font-size: 1rem; /* Tamaño de la fuente */
     font-weight: bold; /* Texto en negrita */
@@ -95,6 +96,7 @@ h3 {
     border-radius: 8px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor a un puntero cuando pasa por encima */
     margin: 16px; /* Margen alrededor del botón */
+    text-decoration: none;
 }
 
 
@@ -109,7 +111,7 @@ h3 {
     display: flex; /* Usa flexbox para organizar el contenido del footer */
     justify-content: space-around; /* Distribuye los elementos del footer de manera equitativa */
     align-items: center; /* Centra los elementos verticalmente */
-    background-color: #f1e1d8; /* Color de fondo del footer */
+    background-color: #e9d5cc; /* Color de fondo del footer */
     color: #1d0c0c;
     padding: 0.5rem 1rem; /* Ajusta el padding a los lados */
     position: fixed; /* Posiciona el footer de manera fija en la pantalla */
@@ -126,13 +128,13 @@ h3 {
     flex-direction: column; /* Alinea los íconos y el texto verticalmente */
     align-items: center; /* Centra los íconos y el texto */
     text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: #1d0c0c; /* Color del texto de los enlaces */
+    color: #27231e; /* Color del texto de los enlaces */
     padding-top: 0.7rem;
 }
 
 .footer a.active p {
     font-weight: bold; /* Hace que el texto del enlace activo sea más grueso */
-    color: #b62013; /* Cambia el color del texto del enlace activo */
+    color: #27231e; /* Cambia el color del texto del enlace activo */
 }
 
 .footer svg {
@@ -143,4 +145,41 @@ h3 {
 .footer p {
     margin-top: 4px; /* Margen superior del texto en el footer */
     font-size: 0.875rem; /* Tamaño de la fuente del texto */
+}
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 2rem; /* Reduce el tamaño de la fuente del título */
+    }
+
+    .hero h2 {
+        font-size: 1.2rem; /* Reduce el tamaño de la fuente del subtítulo */
+    }
+
+    .courses {
+        grid-template-columns: repeat(4, 1fr); /* Mantiene la cantidad de columnas */
+        max-width: 1200px; /* Limita el ancho máximo de la sección */
+        margin: 0 auto; /* Centra la sección */
+    }
+
+ 
+
+    .cta-button {
+        font-size: 0.875rem; /* Reduce el tamaño de la fuente (14px aproximadamente) */
+        padding: 10px 16px;  /* Reduce el padding interno del botón */
+        width: 50%; /* El botón ocupará el 50% del contenedor */
+        max-width: 300px; /* El ancho máximo no será mayor a 300px */
+        margin: 16px auto; /* Centra el botón horizontalmente */
+        display: block; /* Asegura que el botón esté en una línea separada */
+        text-align: center; /* Centra el texto dentro del botón */
+    }
+
+    .footer {
+        padding: 0.5rem; /* Reduce el padding en el footer */
+        justify-content: center; /* Centra el contenido */
+        gap: 1rem; /* Reduce el espacio entre los elementos */
+    }
+
+    .footer a {
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente de los enlaces */
+    }
 }

@@ -32,7 +32,7 @@ button{
     justify-content: center; /* Centra elementos horizontalmente */
     overflow: hidden; /* Oculta contenido desbordado */
     border-radius: 0.75rem; 
-    border-color:  #b62013;
+    border-color:  #b95e33;
     font-weight: bold;
 }
 
@@ -41,7 +41,7 @@ button{
 }
 
 .bi{
-    background-color:#b62013;
+    background-color:#b95e33;
     color: white;
 }
 
