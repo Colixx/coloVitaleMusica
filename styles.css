@@ -9,52 +9,35 @@ body {
     flex-direction: column; /* Los elementos hijos se apilan en columna */
     min-height: 100vh; /* Establece una altura mínima de la pantalla completa */
     overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+    color: #333;
 }
-
-
-.hsero {
-    display: flex; /* Usa flexbox para organizar el contenido */
-    flex-direction: column; /* Los elementos se apilan verticalmente */
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center; /* Centra el contenido horizontalmente */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(img/f3.png); /* Establece una imagen de fondo con un gradiente */
-    background-size: cover; /* Asegura que la imagen de fondo cubra todo el área */
-    background-position: center; /* Centra la imagen de fondo */
-    padding: 16px; /* Espaciado interno de la sección */
-    min-height: 480px; /* Altura mínima de la sección */
-    gap: 24px; /* Espaciado entre los elementos hijos */
-    text-align: center; /* Centra el texto */
-    color: white; /* Color del texto blanco */
-}
-
-.hsero h1 {
-    font-size: 2.25rem; /* Tamaño de la fuente del título */
-    font-weight: 900; /* Estilo de texto en negrita extrema */
-    margin: 0; /* Elimina el margen */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra negra suave */
-}
-
-.hsero h2 {
-    font-size: 1rem; /* Tamaño de la fuente del subtítulo */
-    font-weight: normal; /* Peso de la fuente normal */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra negra suave */
-}
-
 
 .inicio {
     text-align: center; /* Alinea horizontalmente todo el contenido */
 }
-
 .imagen-centrada {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 95%; /* Puedes ajustar el tamaño si es necesario */
 }
-
+h3{
+    color: #333; /* Color marrón oscuro */
+    font-size: 1.125rem; /* Tamaño de texto grande (18px) */
+    font-weight: bold; /* Texto en negrita */
+    line-height: 1.25; /* Espaciado ajustado entre líneas */
+    letter-spacing: -0.015em; /* Tracking negativo para reducir el espacio entre letras */
+    padding-left: 1rem; /* Padding horizontal de 16px (1rem) */
+    padding-right: 1rem;
+    padding-top: 1rem; /* Padding superior de 16px (1rem) */
+    padding-bottom: 0.5rem; /* Padding inferior de 8px (0.5rem) */
+}
 .inicio h1{
     position: relative; /* Para posicionar el pseudo-elemento */
-   
+    margin-top: 0px;
+    font-size: 34px;
+    text-align: center;
+    color: #333;
 }
 
 .inicio h1::after{
@@ -68,35 +51,6 @@ body {
     background-color: #e9d5cc; /* Color de fondo del subrayado */
     z-index: -1; /* Envía el subrayado detrás del texto */
 }
-
-
-
-
-/* Texto de bienvenida */
-h1 {
-    margin-top: 0px;
-    font-size: 34px;
-    text-align: center;
-    color: #333;
-}
-
-
-
-
-
-
-h3 {
-    color: #1d0c0c; /* Color marrón oscuro */
-    font-size: 1.125rem; /* Tamaño de texto grande (18px) */
-    font-weight: bold; /* Texto en negrita */
-    line-height: 1.25; /* Espaciado ajustado entre líneas */
-    letter-spacing: -0.015em; /* Tracking negativo para reducir el espacio entre letras */
-    padding-left: 1rem; /* Padding horizontal de 16px (1rem) */
-    padding-right: 1rem;
-    padding-top: 1rem; /* Padding superior de 16px (1rem) */
-    padding-bottom: 0.5rem; /* Padding inferior de 8px (0.5rem) */
-}
-
 
 .courses {
     padding: 16px; /* Espaciado interno de la sección de cursos */
@@ -114,13 +68,15 @@ h3 {
 }
 
 .course-image {
-    width: 100%; /* Ancho completo del contenedor */
+    width: 90%; /* Ancho completo del contenedor */
     aspect-ratio: 1 / 1; /* Mantiene una proporción de 1:1 (cuadrado) */
     background-size: contain; /* Ajusta el tamaño de la imagen para que sea completamente visible */
     background-position: center; /* Centra la imagen en el contenedor */
+    background-size: cover;
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     border-radius: 16px; /* Bordes redondeados */
     background-color: #e0e0e0; /* Color de fondo por defecto en caso de que la imagen no cargue */
+    border: 7px solid white; /* Borde blanco */
 }
 
 .course p {
@@ -144,14 +100,19 @@ h3 {
     cursor: pointer; /* Cambia el cursor a un puntero cuando pasa por encima */
     margin: 16px; /* Margen alrededor del botón */
     text-decoration: none;
+    margin-bottom: 10rem;
 }
 
 
-.sobreNosotros{
-    padding-bottom: 100px;
+
+.sobreNosotros p{
+    color: #333;
+    line-height: 1.25; /* Espaciado ajustado entre líneas */
+    letter-spacing: -0.015em; /* Tracking negativo para reducir el espacio entre letras */
+    padding-left: 1rem; /* Padding horizontal de 16px (1rem) */
+    padding-right: 1rem;
+   
 }
-
-
 
 
 .footer {
