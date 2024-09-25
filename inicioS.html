@@ -19,9 +19,10 @@
         <!-- asi se comenta -->
 <!-- Elegir -->
 <div id="pantalla1" style="display: block;" class="pantalla">
+    <p class="x" onclick="cerrarPantalla()">x</p>
     <h3>Colo música</h3>
-    <h2>Unite a la comunidad que aprende música</h2>
-    <p>Vas a aprender djgfdjgdfl g;dfjg;ldfh</p>
+    <h2>Unite a la comunidad que aprende música sin sufrir</h2>
+    <p>Vas a aprender ordenado, simple, divertido.</p>
     <div class="botonera">    <button class="br" onclick="showScreen('pantalla2')">Registrate</button>
         <button class="bi" onclick="showScreen('pantalla3')">Iniciar Sesión</button>
     </div>
@@ -29,8 +30,8 @@
 </div>
 
 <!-- Registrar -->
-<div id="pantalla2" style="display: none;">
-    <h2>Registrate</h2>
+<div id="pantalla2" style="display: none;" class="pantalla">
+    <h2 class="tituloRegi">Registrate</h2>
     <form action="">
         <label for="name">Nombre: </label>
         <input type="text" id="name" required>
@@ -41,7 +42,7 @@
         <label for="password">Contraseña nueva:</label>
         <input type="password" id="password">
 
-        <button>Enviar</button>
+        <button class="bi">Enviar</button>
     </form>
     <button onclick="showScreen('pantalla1')">Volver</button>
 </div>

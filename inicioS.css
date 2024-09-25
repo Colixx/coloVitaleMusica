@@ -1,47 +1,115 @@
-.pantalla{
-    display: flex;
-    text-align: center;
+.pantalla {
+    display: flex; 
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    position: relative; /* Necesario para el posicionamiento absoluto de la "x" */
+    text-align: center; /* Centra el texto dentro de la pantalla */
 }
 
-.pantalla h2{
-    margin-bottom: 0px;
-    padding: 2rem 1rem 0rem 1rem;  /* 10px arriba, 20px derecha, 30px abajo, 40px izquierda */
-    margin-top: 1rem;
-    font-size: 2rem;
+.x {
+    position: absolute; /* Posiciona el botón de cerrar */
+    top: 10px; /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde el lado derecho */
+    font-size: 24px; /* Tamaño del texto del botón */
+    cursor: pointer; /* Cambia el cursor a mano */
+    color: #333; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border: 1px solid #b95e33; /* Borde del botón */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #e9d5cc; /* Color de fondo del botón */
 }
 
-.pantalla p{
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
+h3 {
+    margin-top: 10rem; /* Margen superior */
 }
 
-.botonera{
+h3::after {
+    content: ''; /* Crea un pseudo-elemento para el subrayado */
+    position: absolute; /* Posiciona el subrayado */
+    left: 100px; /* Espaciado desde el lado izquierdo */
+    right: 100px; /* Espaciado desde el lado derecho */
+    top: 11rem; /* Espaciado desde la parte superior */
+    height: 20px; /* Altura del subrayado */
+    background-color: #e9d5cc; /* Color de fondo del subrayado */
+    z-index: -1; /* Envía el subrayado detrás del texto */
+}
+
+.pantalla h2 {
+    margin-bottom: 1rem; /* Margen inferior */
+    padding: 2rem 1rem 0rem 1rem; /* Espaciado interno */
+    font-size: 2rem; /* Tamaño del texto */
+}
+
+.pantalla p {
+    margin-top: 0.5rem; /* Margen superior */
+    margin-bottom: 2rem; /* Margen inferior */
+}
+
+.botonera {
     display: flex; /* Activa Flexbox */
     flex-direction: column; /* Coloca los elementos en columna */
-    align-items: center; /* Opcional: centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
 }
 
-button{
-    min-width: 20rem; /* Ancho mínimo */
-    max-width: 40rem; /* Ancho máximo */
-    margin: 0.2rem;
-    padding: 0.5rem;
-    font-size: 1rem;
+button {
+    min-width: 20rem; /* Ancho mínimo del botón */
+    max-width: 40rem; /* Ancho máximo del botón */
+    margin: 0.2rem; /* Margen entre botones */
+    padding: 0.5rem; /* Espaciado interno del botón */
+    font-size: 1rem; /* Tamaño del texto del botón */
     cursor: pointer; /* Cambia el cursor a mano */
-    align-items: center; /* Centra elementos verticalmente */
-    justify-content: center; /* Centra elementos horizontalmente */
-    overflow: hidden; /* Oculta contenido desbordado */
-    border-radius: 0.75rem; 
-    border-color:  #b95e33;
-    font-weight: bold;
+    border-radius: 0.75rem; /* Bordes redondeados */
+    border: 1px solid #b95e33; /* Borde del botón */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Negrita en el texto */
 }
 
-.br{
-
+.br {
+    background-color: white; /* Color de fondo para el botón 'br' */
 }
 
-.bi{
-    background-color:#b95e33;
-    color: white;
+.bi {
+    background-color: #e9d5cc; /* Color de fondo para el botón 'bi' */
 }
 
+.form-container {
+    background: white; /* Color de fondo del contenedor del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    width: 300px; /* Ancho del contenedor del formulario */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Margen inferior para los grupos de formulario */
+}
+
+label {
+    display: block; /* Muestra la etiqueta como bloque */
+    margin-bottom: 0.5rem; /* Margen inferior de la etiqueta */
+}
+
+input {
+    width: 70%; /* Ancho del input */
+    padding: 10px; /* Espaciado interno del input */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 1.5rem; /* Margen inferior del input */
+}
+
+.tituloRegi {
+    margin-top: 10rem; /* Margen superior para el título de registro */
+}
+
+.tituloRegi::after {
+    content: ''; /* Crea un pseudo-elemento para el subrayado */
+    position: absolute; /* Posiciona el subrayado */
+    left: 100px; /* Espaciado desde el lado izquierdo */
+    right: 100px; /* Espaciado desde el lado derecho */
+    top: 13rem; /* Espaciado desde la parte superior */
+    height: 20px; /* Altura del subrayado */
+    background-color: #e9d5cc; /* Color de fondo del subrayado */
+    z-index: -1; /* Envía el subrayado detrás del texto */
+}

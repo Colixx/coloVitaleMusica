@@ -9,3 +9,7 @@ function showScreen(pantallaId) {
     var pantalla = document.getElementById(pantallaId);
     pantalla.style.display = 'block';
 }
+
+function cerrarPantalla() {
+    window.location.href = 'index.html'; // Redirige a index.html
+}
