@@ -1,0 +1,23 @@
+/* Estilos específicos para h1 en la sección de inicio */
+h1 {
+    position: relative; /* Posiciona el pseudo-elemento */
+    margin-top: 1rem; /* Margen superior cero */
+    font-size: 34px; /* Tamaño del texto */
+    text-align: center; /* Alinea el texto al centro */
+    color: #333; /* Color del texto */
+}
+
+h1::after {
+    content: ''; /* Crea un pseudo-elemento vacío */
+    position: absolute; /* Posiciona el subrayado relativo a h1 */
+    left: 100px; /* Posición desde la izquierda */
+    right: 100px; /* Posición desde la derecha */
+    top: 23px; /* Posición desde la parte superior */
+    height: 20px; /* Altura del subrayado */
+    background-color: #e9d5cc; /* Color de fondo del subrayado */
+    z-index: -1; /* Envía el subrayado detrás del texto */
+}
+
+.courses{
+    margin-bottom: 10rem; 
+}

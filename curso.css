@@ -1,0 +1,98 @@
+.pantalla {
+    display: flex; 
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    position: relative; /* Necesario para el posicionamiento absoluto de la "x" */
+    text-align: center; /* Centra el texto dentro de la pantalla */
+  
+}
+
+h1:after{
+    content: ''; /* Crea un pseudo-elemento para el subrayado */
+    position: absolute; /* Posiciona el subrayado */
+    left: 50px; /* Espaciado desde el lado izquierdo */
+    right: 50px; /* Espaciado desde el lado derecho */
+    top: 2,3rem; /* Espaciado desde la parte superior */
+    height: 20px; /* Altura del subrayado */
+    background-color: #e9d5cc; /* Color de fondo del subrayado */
+    z-index: -1; /* Envía el subrayado detrás del texto */
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    line-height: 1.8; /* Aumenta el interlineado */
+}
+
+button {
+    min-width: 20rem; /* Ancho mínimo del botón */
+    margin: 0.2rem; /* Margen entre botones */
+    padding: 0.5rem; /* Espaciado interno del botón */
+    font-size: 1rem; /* Tamaño del texto del botón */
+    cursor: pointer; /* Cambia el cursor a mano */
+    border-radius: 0.75rem; /* Bordes redondeados */
+    border: 1px solid #b95e33; /* Borde del botón */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Negrita en el texto */
+    background-color: #e9d5cc; /* Color de fondo para el botón 'bi' */
+}
+.pantalla {
+    display: none;
+}
+#pantalla1 {
+    display: block;
+}
+
+
+#pantalla2 h1{
+    margin-top: 1rem; /* Margen superior */
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.lesson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+
+.lesson .circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #e9d5cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.lesson.available .circle {
+    background-color: #b95e33; /* Color para lecciones disponibles */
+}
+
+.lesson.locked .circle {
+    background-color: #e9d5cc; /* Color para lecciones bloqueadas */
+}
+
+
+/* Estilos para crear el efecto zig-zag */
+.lesson:nth-child(odd) {
+    transform: translateX(-30px); /* Mueve a la izquierda las lecciones impares */
+}
+
+.lesson:nth-child(even) {
+    transform: translateX(30px); /* Mueve a la derecha las lecciones pares */
+}
