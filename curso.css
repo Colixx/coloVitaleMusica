@@ -1,3 +1,5 @@
+
+
 .pantalla {
     display: flex; 
     flex-direction: column; /* Coloca los elementos en columna */
@@ -37,6 +39,7 @@ button {
     color: #333; /* Color del texto */
     font-weight: bold; /* Negrita en el texto */
     background-color: #e9d5cc; /* Color de fondo para el botón 'bi' */
+    margin-bottom: 10rem;
 }
 .pantalla {
     display: none;
@@ -67,16 +70,20 @@ button {
 }
 
 .lesson .circle {
-    width: 70px;
-    height: 70px;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     background-color: #e9d5cc;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #333;
     font-size: 24px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    cursor: pointer;
+    padding: 1rem;
+
 }
 
 .lesson.available .circle {
@@ -96,3 +103,40 @@ button {
 .lesson:nth-child(even) {
     transform: translateX(30px); /* Mueve a la derecha las lecciones pares */
 }
+
+.temario {
+    list-style-type: none; /* Elimina las viñetas por defecto */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se dispongan en una columna */
+    align-items: center; /* Centra los cuadros en el eje horizontal */
+}
+
+
+.temario li {
+    background-color: #f1e1d8; /* Color de fondo suave */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 1rem 1rem; /* Espacio entre cada item */
+    padding: 15px; /* Espacio interior del item */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.2s ease-in-out; /* Animación en hover */
+    max-width: 80%;
+    min-width: 80%;
+    font-size: 0.9rem;
+}
+
+.temario li:hover {
+    transform: scale(1.02); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+.temario br {
+    margin-bottom: 1050px; /* Espaciado entre líneas cuando se usa <br> */
+}
+
+.temario li span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px; /* Estilo adicional para los títulos */
+}
+
